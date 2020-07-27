@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <form action="" name="calculator">
+        <input type="text" name="screen" id="" disabled>
+        <hr>
+        <input type="button" value="&radic;"
+            onclick="calculator.screen.value= Math.sqrt(calculator.screen.value); audio();">
+        <input type="button" value="CE">
+        <input type="button" value="C" onclick="calculator.screen.value=''; audio();">
+        <input type="button" value="&larr;"
+            onclick="calculator.screen.value=calculator.screen.value.slice(0,-1); audio();"> <br>
+
+        <input type="button" value="7" onclick="calculator.screen.value+='7'; audio();">
+        <input type="button" value="8" onclick="calculator.screen.value+='8'; audio();">
+        <input type="button" value="9" onclick="calculator.screen.value+='9'; audio();">
+        <input type="button" value="+" onclick="calculator.screen.value+='+'; audio();">
+
+        <br>
+
+        <input type="button" value="4" class="buttonC" onclick="calculator.screen.value+='4'; audio();">
+        <input type="button" value="5" class="buttonC" onclick="calculator.screen.value+='5'; audio();">
+        <input type="button" value="6" class="buttonC" onclick="calculator.screen.value+='6'; audio();">
+        <input type="button" value="-" class="buttonC" onclick="calculator.screen.value+='-'; audio();">
+
+        <br>
+        <input type="button" value="1" onclick="calculator.screen.value+='1'; audio();">
+        <input type="button" value="2" onclick="calculator.screen.value+='2'; audio();">
+        <input type="button" value="3" onclick="calculator.screen.value+='3'; audio();">
+        <input type="button" value="*" onclick="calculator.screen.value+='*'; audio();">
+        <br>
+
+        <input type="button" value="0" onclick="calculator.screen.value+='0'; audio();">
+        <input type="button" value="." onclick="calculator.screen.value+='.'; audio();">
+        <input type="button" value="/" onclick="calculator.screen.value+='/'; audio();">
+        <input type="button" id="special" value="="
+            onclick="calculator.screen.value=eval(calculator.screen.value); audio();">
+
+
+    </form>
+    <audio id="buttonClick">
+
+        <source src="audio/button.ogg">
+        </source>
+
+    </audio>
+    <script>
+        function audio() {
+            document.getElementById("buttonClick").play();
+        }
+    </script>
+</body>
+
+
+
+</html>

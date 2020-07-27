@@ -1,0 +1,56 @@
+form {
+    width: 300px;
+    padding: 20px;
+    background-color: dimgray;
+
+    -webkit-box-shadow: 2px 2px 10px 2px #52514E;
+    box-shadow: 2px 2px 10px 2px #52514E;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+
+
+}
+
+form [type="text"] {
+    color: aliceblue;
+    width: 100%;
+    font-size: 45px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+form [type="button"] {
+    width: 72px;
+    height: 70px;
+    color: black;
+    background: white;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#special {
+    background-color: rgb(70, 241, 70);
+}
+
+form [type="button"]:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febf01+0,febf01+100;Yellow+Flat */
+    background: rgb(254, 191, 1);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(254, 191, 1) 0%, rgb(254, 191, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(254, 191, 1) 0%, rgb(254, 191, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(254, 191, 1) 0%, rgb(254, 191, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febf01', endColorstr='#febf01', GradientType=0);
+    /* IE6-9 */
+
+}
+
+* {
+    transition: 0.3s all ease-in-out;
+}
